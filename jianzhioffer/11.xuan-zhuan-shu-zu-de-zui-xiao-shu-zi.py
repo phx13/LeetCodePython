@@ -23,7 +23,7 @@ class Solution:
         # 二分
         low, high = 0, len(numbers) - 1
         while low < high:
-            mid = low + (high - low) / 2
+            mid = low + (high - low) // 2
             if numbers[mid] > numbers[high]:
                 low = mid + 1
             elif numbers[mid] < numbers[high]:
